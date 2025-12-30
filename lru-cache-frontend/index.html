@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>LRU Cache Playground</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div id="desktop-only">
+    <h1>LRU Cache Playground</h1>
+    <p class="subtitle">Visualizing how LRU Cache works</p>
+
+    <!-- Controls -->
+    <section class="controls">
+  <input type="text" id="keyInput" placeholder="Key" />
+  <input type="text" id="valueInput" placeholder="Value" />
+  <button id="getBtn">GET</button>
+  <button id="putBtn">PUT</button>
+</section>
+
+<section class="controls">
+  <input type="number" id="capacityInput" placeholder="Cache Capacity" />
+  <button id="setCapacityBtn">Set Capacity</button>
+</section>
+
+
+    <!-- Status -->
+    <section class="status">
+      <p id="statusText">Waiting for request...</p>
+    </section>
+
+    <!-- Cache Visualization -->
+    <section class="cache-container">
+      <h2>Cache State (MRU → LRU)</h2>
+      <div id="cache"></div>
+    </section>
+  </div>
+
+  <div id="mobile-block">
+    <h2>Desktop Only</h2>
+    <p>Please open this app on a laptop or desktop.</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
