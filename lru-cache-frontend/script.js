@@ -1,4 +1,4 @@
-const API_BASE = "http://localhost:5000";
+const API_BASE = "https://lru-cache-backend.onrender.com";
 
 const keyInput = document.getElementById("keyInput");
 const valueInput = document.getElementById("valueInput");
